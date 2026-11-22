@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose draws every pixel; this theme only supplies the window behind it. -->
+    <style name="Theme.Master" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/master_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Platform defaults are teal/blue: replace so no system widget can show a blue shade. -->
+        <item name="android:colorAccent">#D9541E</item>
+        <item name="android:colorPrimary">#D9541E</item>
+        <item name="android:colorControlActivated">#D9541E</item>
+        <item name="android:colorControlHighlight">#33D9541E</item>
+        <item name="android:textColorHighlight">#66D9541E</item>
+    </style>
+
+    <!-- System splash (AndroidX SplashScreen API, works on API 26+). -->
+    <style name="Theme.Master.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.Master</item>
+    </style>
+</resources>

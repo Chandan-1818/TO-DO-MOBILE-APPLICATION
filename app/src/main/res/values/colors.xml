@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Parchment sampled from the supplied samurai artwork (tools/generate_brand_assets.py). -->
+    <color name="ic_launcher_background">#C4B398</color>
+    <!-- Cinematic splash background: always charcoal, in both themes. -->
+    <color name="splash_background">#121110</color>
+    <!-- Window background before Compose draws (matches MasterPalette light background). -->
+    <color name="master_window_background">#F6F1E7</color>
+</resources>
